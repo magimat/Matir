@@ -1,0 +1,17 @@
+{
+  "name": "matir",
+  "version": "1.0.0",
+  "description": "Mat RM mini 3 controller",
+  "main": "matir.js",
+  "scripts": {
+    "start": "nodemon matir.js"
+  },
+  "author": "Mathieu Girard",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
