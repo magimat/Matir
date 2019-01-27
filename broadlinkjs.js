@@ -12,6 +12,7 @@ util.inherits(Broadlink, EventEmitter);
 
 
 Broadlink.prototype.genDevice = function (devtype, host, mac){
+
     var dev;
     if(devtype == 0){ // SP1
         dev = new device(host,mac);
@@ -191,6 +192,7 @@ Broadlink.prototype.discover = function(){
 function device( host, mac, timeout=10){
     this.host = host;
     this.mac = mac;
+
     this.emitter = new EventEmitter();
 
     this.on = this.emitter.on;
